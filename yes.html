@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>YEY</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff69b4;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 20px;
+      max-width: 500px;
+    }
+
+    audio {
+      display: none;
+    }
+    button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+  </style>
+</head>
+<body>
+
+    <!-- Embedded GIF from Tenor -->
+<iframe src="https://tenor.com/embed/16028344" width="250" height="250" frameborder="0" allowfullscreen></iframe>
+
+  <h1>YEYYYYYYYY</h1>
+  <p>chour :< what if ni-click mo lang kasi curious ka sa next page HAHAAHAHAHA :c</p>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 1rem;">
+  <p style="margin: 0;">can u give me a clue if it's a yes or no?</p>
+  <button onclick="showClue()" style="margin-top: -2px; background-color: hotpink; color: white; padding: 8px 16px; border: none; border-radius: 8px; box-shadow: 2px 2px 6px rgba(0,0,0,0.2); cursor: pointer;">
+    Ogow
+  </button>
+</div>
+
+
+  <!-- Add your custom audio file here -->
+  <audio id="bgMusic">
+  <source src="hanap_hanap.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bgMusic').play()">Play this!</button>
+
+<script>
+  function showClue() {
+    Swal.fire({
+      title: '',
+      html: `If <b>yes</b>, play any <i>Cup of Joe</i> song on your notes.<br>If <b>no</b>, play any <i>Taylor Swift</i> song.`,
+      icon: '',
+      confirmButtonText: 'Got it!',
+      confirmButtonColor: '#f06292'
+    }).then(() => {
+      // Second swal after clicking "Got it!"
+      Swal.fire({
+        title: '',
+        text: 'Last swal, just wanted to sayyy that yep, I really like you, Jhodie. Really hope u dont get uncomfy with these things. If no would be your answer then ill respect that and take that as a sign na gusto mo lang talaga maging friends with me and nothing more, but if it is a yes then I guess ill make a move na coz what if maunahan na naman ako? :< but no need to get pressured haaaa, i don wanna rush things din naman, i need your answer lang to make sure na hindi ka nau-uncomfy with all these parinigs, asaran, and lowkey gestures ko. Yun lang, hope it is a yes hihi :>',
+        icon: '',
+        confirmButtonText: 'okii',
+        confirmButtonColor: '#f48fb1'
+      });
+    });
+  }
+</script>
+
+
+
+</body>
+</html>
